@@ -78,7 +78,7 @@ if canvas_result.image_data is not None:
             predictions = model.predict(final_input)
             best_guess = np.argmax(predictions)
 
-            st.success(f"## 🎉 The ANN Model predicts: {best_guess}")
+            st.success(f"## 🎉 The drawn digit is: {best_guess}")
         else:
             st.error("❌ Cannot predict. Make sure you draw exactly one single digit clearly.")
 
